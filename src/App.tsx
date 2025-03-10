@@ -1,28 +1,19 @@
 import React from "react";
+import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+// import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
 import HomePage from "./pages/Homepage";
 
-const App: React.FC = () => {
+
+function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
+    <Routes>
       <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<h1>About Us</h1>} />
-        <Route path="/mentors" element={<h1>Mentors Page</h1>} />
-        <Route path="/investors" element={<h1>Investors Page</h1>} />
-        <Route path="/startups" element={<h1>Startups Page</h1>} />
-        <Route path="/articles" element={<h1>Articles Page</h1>} />
-        <Route path="/videos" element={<h1>Videos Page</h1>} />
-        <Route path="/community" element={<h1>Community Page</h1>} />
-        <Route path="/contact" element={<h1>Contact Us</h1>} />
-        <Route path="/login" element={<h1>Login Page</h1>} />
-      </Routes>
-      <Footer />
-    </Router>
+      {/* <Route path="*" element={<NotFound />} /> */}
+    </Routes>
   );
-};
+}
 
 export default App;
+

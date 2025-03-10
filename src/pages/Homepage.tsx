@@ -1,6 +1,6 @@
 import React from "react";
-// import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 // import Features from "./home/Features";
 // import Testimonials from "./home/Testimonials";
@@ -8,9 +8,9 @@ import Hero from "../components/Hero";
 const HomePage: React.FC = () => {
   return (
     <div>
-        {/* <Navbar /> */}
+        <Navbar />
       <Hero />
-        {/* <Footer /> */}
+        <Footer />
       {/* <Features />
       <Testimonials /> */}
     </div>
