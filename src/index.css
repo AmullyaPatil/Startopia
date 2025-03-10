@@ -1,3 +1,5 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+
+@import "@fortawesome/fontawesome-free/css/all.min.css";

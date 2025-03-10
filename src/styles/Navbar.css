@@ -31,11 +31,16 @@
 .nav-links a , .nav-links span {
   text-decoration: none;
   color: #172E59;
-  font-size: 26px;
+  font-size: 20px;
+  font-family: lato;
   font-weight: 500;
 }
 
 .nav-links a:hover {
+  color: #118577;
+  font-weight: 600;
+}
+.nav-links span:hover {
   color: #118577;
   font-weight: 600;
 }
