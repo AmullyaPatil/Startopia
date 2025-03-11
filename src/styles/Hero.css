@@ -98,7 +98,6 @@
     text-align: center;
 }
 
-/* Keyframe animation for scrolling */
 @keyframes scrollText {
     from {
         transform: translateX(0);
@@ -109,17 +108,39 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .hero-container {
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 1040px) {
+    .hero-content h1 {
+        font-size: 32px;
     }
+}
 
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
     .hero-content, .hero-image {
         max-width: 100%;
     }
 
     .hero-image img {
-        max-width: 80%;
+        max-width: 90%;
+    }
+    .hero-content p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 480px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content{
+        order:2;
+    }
+    .hero-image{
+        order:1;
+    }
+    .hero-buttons{
+        justify-content: center;
     }
 }

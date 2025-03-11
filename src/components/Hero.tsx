@@ -13,8 +13,9 @@ const Hero: React.FC = () => {
           </h1>
           <p>
             At Startopia, we connect startup founders with mentors, investors, and
-            service providers to foster growth and innovation. Join our vibrant
-            ecosystem designed to support your entrepreneurial journey.
+            service providers to foster growth and innovation. 
+            {/* Join our vibrant
+            ecosystem designed to support your entrepreneurial journey. */}
           </p>
           <div className="hero-buttons">
             <button className="join-btn">Join</button>

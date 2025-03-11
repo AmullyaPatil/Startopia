@@ -34,16 +34,17 @@
   color: #172E59;
   font-size: 20px;
   font-family: lato;
-  font-weight: 500;
+  /* font-family: 'Inter', sans-serif; */
+  font-weight: bold;
 }
 
 .nav-links a:hover {
   color: #118577;
-  font-weight: 600;
+  font-weight: 700;
 }
 .nav-links span:hover {
   color: #118577;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .dropdown-menu {
@@ -81,7 +82,18 @@
   cursor: pointer;
 }
 
-/* Mobile Responsive */
+@media (max-width: 1040px) {
+  .logo a {
+    font-size: 38px;
+  }
+  .nav-links{
+    gap: 28px;
+  }
+  .nav-links a , .nav-links span {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
